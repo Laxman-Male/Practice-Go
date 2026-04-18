@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"llcc/handler"
 )
 
@@ -27,10 +28,10 @@ func main() {
 	// 	{2, 2},
 	// }
 	// result := handler.FindMissingAndRepeatedValues(grid)
-	var nums1 = []int{1, 2, 3, 0, 0, 0}
-	var m int = 3
-	var n int = 3
-	var nums2 = []int{2, 5, 6}
+	// var nums1 = []int{1, 2, 3, 0, 0, 0}
+	// var m int = 3
+	// var n int = 3
+	// var nums2 = []int{2, 5, 6}
 
 	// var nums1 = []int{1}
 	// var m int = 1
@@ -42,10 +43,13 @@ func main() {
 	// var n int = 1
 	// var nums2 = []int{1}
 
-	handler.Merge(nums1, m, nums2, n)
-	// fmt.Println("result=", nums1)
+	// handler.Merge(nums1, m, nums2, n)
 
 	// nums1 = [1], m = 1, nums2 = [], n = 0
 	// nums1 = [0], m = 0, nums2 = [1], n = 1
-
+	// var arr = []int{2, 2, 1}
+	var arr = []int{4, 1, 2, 1, 2}
+	// var arr = []int{1}
+	result := handler.SingleNumber(arr)
+	fmt.Println("result=", result)
 }
