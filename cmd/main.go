@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"llcc/handler"
 )
 
@@ -20,13 +19,33 @@ func main() {
 	//2
 
 	// result := handler.MajorityElementArray(num)
-	grid := [][]int{
-		// {1, 5, 2},
-		// {8, 4, 3},
-		// {7, 8, 6},
-		{1, 3},
-		{2, 2},
-	}
-	result := handler.FindMissingAndRepeatedValues(grid)
-	fmt.Println("result=", result)
+	// grid := [][]int{
+	// {1, 5, 2},
+	// {8, 4, 3},
+	// {7, 8, 6},
+	// 	{1, 3},
+	// 	{2, 2},
+	// }
+	// result := handler.FindMissingAndRepeatedValues(grid)
+	var nums1 = []int{1, 2, 3, 0, 0, 0}
+	var m int = 3
+	var n int = 3
+	var nums2 = []int{2, 5, 6}
+
+	// var nums1 = []int{1}
+	// var m int = 1
+	// var n int = 0
+	// var nums2 = []int{}
+
+	// var nums1 = []int{}
+	// var m int = 0
+	// var n int = 1
+	// var nums2 = []int{1}
+
+	handler.Merge(nums1, m, nums2, n)
+	// fmt.Println("result=", nums1)
+
+	// nums1 = [1], m = 1, nums2 = [], n = 0
+	// nums1 = [0], m = 0, nums2 = [1], n = 1
+
 }
