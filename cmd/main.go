@@ -48,8 +48,14 @@ func main() {
 	// nums1 = [1], m = 1, nums2 = [], n = 0
 	// nums1 = [0], m = 0, nums2 = [1], n = 1
 	// var arr = []int{2, 2, 1}
-	var arr = []int{4, 1, 2, 1, 2}
+	// var arr = []int{4, 1, 2, 1, 2}
 	// var arr = []int{1}
-	result := handler.SingleNumber(arr)
+	// result := handler.SingleNumber(arr)
+
+	// var maxProfit = []int{7, 1, 5, 3, 6, 4}
+	// var maxProfit = []int{7, 6, 4, 3, 1}
+	// var maxProfit = []int{1, 2}
+	// result := handler.MaxProfit(maxProfit)
+	result := handler.MyPow(2, 10)
 	fmt.Println("result=", result)
 }
