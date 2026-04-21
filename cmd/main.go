@@ -56,6 +56,8 @@ func main() {
 	// var maxProfit = []int{7, 6, 4, 3, 1}
 	// var maxProfit = []int{1, 2}
 	// result := handler.MaxProfit(maxProfit)
-	result := handler.MyPow(2, 10)
+	// result := handler.MyPow(2, 10)
+	var verticle = []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	result := handler.MaxArea(verticle)
 	fmt.Println("result=", result)
 }
