@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"llcc/handler"
 )
 
@@ -57,7 +56,11 @@ func main() {
 	// var maxProfit = []int{1, 2}
 	// result := handler.MaxProfit(maxProfit)
 	// result := handler.MyPow(2, 10)
-	var verticle = []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-	result := handler.MaxArea(verticle)
-	fmt.Println("result=", result)
+	// var verticle = []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	// result := handler.MaxArea(verticle)
+
+	// var colorArr = []int{2, 0, 2, 1, 1, 0}
+	var colorArr = []int{2, 0, 1}
+	handler.SortColors(colorArr)
+	// fmt.Println("result=", result)
 }
