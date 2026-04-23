@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"llcc/handler"
 )
 
@@ -60,7 +61,9 @@ func main() {
 	// result := handler.MaxArea(verticle)
 
 	// var colorArr = []int{2, 0, 2, 1, 1, 0}
-	var colorArr = []int{2, 0, 1}
-	handler.SortColors(colorArr)
-	// fmt.Println("result=", result)
+	// var colorArr = []int{2, 0, 1}
+
+	var arr = []int{-1, 0, 1, 2, -1, -4}
+	result := handler.ThreeSum(arr)
+	fmt.Println("result=", result)
 }
