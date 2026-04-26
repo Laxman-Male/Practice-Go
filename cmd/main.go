@@ -63,7 +63,9 @@ func main() {
 	// var colorArr = []int{2, 0, 2, 1, 1, 0}
 	// var colorArr = []int{2, 0, 1}
 
-	var arr = []int{-1, 0, 1, 2, -1, -4}
-	result := handler.ThreeSum(arr)
+	// var arr = []int{-1, 0, 1, 2, -1, -4}
+	arr := []int{1, 0, -1, 0, -2, 2}
+	target := 0
+	result := handler.FourSum(arr, target)
 	fmt.Println("result=", result)
 }
